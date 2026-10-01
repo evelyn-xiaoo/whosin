@@ -52,15 +52,19 @@ open WhosIn/WhosIn.xcodeproj
 ### Project Structure
 ```
 WhosIn/
-├── WhosIn/              # Main app target
-│   ├── WhosInApp.swift      # App entry point with ModelContainer setup
-│   ├── ContentView.swift    # Main view (currently template code)
-│   ├── Item.swift            # SwiftData model example
-│   ├── Assets.xcassets/      # Asset catalog
-│   ├── Info.plist            # App configuration (background modes)
-│   └── WhosIn.entitlements   # CloudKit and push notification entitlements
-├── WhosInTests/         # Unit tests
-└── WhosInUITests/       # UI tests
+├── WhosIn/                  # Main app target
+│   ├── WhosInApp.swift          # App entry point with ModelContainer setup
+│   ├── ContentView.swift        # Main view
+│   ├── Item.swift               # SwiftData model example
+│   ├── NewActivity/             # New activity feature
+│   │   └── NewActivity.swift
+│   ├── ViewOthersActivities/    # View others' activities feature
+│   │   └── ViewOthersActivities.swift
+│   ├── Assets.xcassets/         # Asset catalog
+│   ├── Info.plist               # App configuration (background modes)
+│   └── WhosIn.entitlements      # CloudKit and push notification entitlements
+├── WhosInTests/             # Unit tests
+└── WhosInUITests/           # UI tests
 ```
 
 ## Important Configuration Details
